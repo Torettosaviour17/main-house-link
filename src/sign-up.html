@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sign-in</title>
+    <title>sign-up</title>
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,9 +14,39 @@
   </head>
   <body>
     <header class="w-[100%] h-[100vh] flex justify-between">
-      <div class="md:w-[60%] w-full">
+      <div
+        class="hidden md:w-1/2 sm:w-[30%] h-[100vh] justify-center items-center object-cover bg-no-repeat sm:flex"
+        style="background: url(./img/Rectangle\ 607.png)"
+      >
+        <div
+          class="space-y-20 w-[70%] bg-white bg-opacity-25 border-inherit justify-center flex h-[80vh] flex-col items-center"
+        >
+          <div
+            class="bg-white flex w-[90%] rounded-3xl space-x-5 justify-center items-center py-2"
+          >
+            <img src="./img/Linkedin.svg" alt="" />
+            Sign up with Linkedln
+          </div>
+          <div
+            class="bg-white flex w-[90%] rounded-3xl space-x-5 justify-center items-center py-2"
+          >
+            <img src="./img/twitter (1) 1.svg" alt="" />
+            Sign up with
+            <table></table>
+            witter
+          </div>
+          <div
+            class="bg-white flex w-[90%] rounded-3xl space-x-5 justify-center items-center py-2"
+          >
+            <img src="./img/Facebook.svg" alt="" />
+            Sign up with Facebook
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 h-[100vh] sm:w-[70%] w-full">
+        <!-- bg-[url(./img/Group 21.svg)] -->
         <nav
-          class="inline lg:flex md:justify-between md:items-center p-7 text-center"
+          class="inline lg:flex md:justify-between md:items-center px-6 py-3 text-center"
         >
           <div>
             <a class="flex items-center" href="./index.html">
@@ -28,17 +58,17 @@
             <p class="font-medium">
               Don’t have an account?
               <span class="text-[#69B99D] pl-3">
-                <a href="./sign-up.html">Sign up!</a>
+                <a href="./sign-in.html">Sign in!</a>
               </span>
             </p>
           </div>
         </nav>
         <div>
           <h1 class="text-4xl font-Poppins font-semibold text-center">
-            Welcome Back
+            Sign Up
           </h1>
           <h4 class="font-normal font-Roboto text-center text-[18px] pt-4 pb-7">
-            Login into your account
+            Get started absolutely free
           </h4>
           <div class="flex font-medium space-x-4 w-[100] justify-center">
             <div
@@ -56,77 +86,48 @@
               <span> Facebook</span>
             </div>
           </div>
-          <div class="flex items-center justify-center space-x-9 font-Roboto
-          font-normal py-4">
+          <div
+            class="flex items-center justify-center space-x-9 font-Roboto font-normal py-4"
+          >
             <hr class="border-1 border-gray-500 w-[20%] inline-block" />
             <span> Or continue with </span>
             <hr class="border-1 border-gray-500 w-[20%] inline-block" />
           </div>
-          <form class="items-center flex flex-col">
+          <form class="items-center flex flex-col space-y-5">
             <input
               type="text"
-              class="text-xl p-4 w-[55%] rounded-xl border mb-5"
+              class="text-lg p-2 w-[55%] rounded-xl border"
               style="border: 1.5px solid black"
-              placeholder="Email"
+              placeholder="Full Name"
             />
-            <br />
             <input
               type="text"
-              class="text-xl p-4 w-[55%] rounded-xl border mb-5"
+              class="text-lg p-2 w-[55%] rounded-xl border"
               style="border: 1.5px solid black"
-              placeholder="password"
+              placeholder="Enter Email"
             />
-            <div class="md:flex justify-between space-x-8">
-              <div class="flex items-center">
-                <input type="checkbox" id="toggle" class="hidden" />
-                <label
-                  for="toggle"
-                  class="cursor-pointer flex font-medium space-x-4"
-                >
-                  <div class="relative">
-                    <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
-                    <div
-                      class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"
-                    ></div>
-                  </div>
-                  <span> Remember me </span>
-                </label>
-              </div>
-              <div class="text-[#D93F21]">
-                <a class="font-bold" href="">Recover Password</a>
-              </div>
-            </div>
-            <div class="w-[100%] flex justify-center mt-8">
+            <input
+              type="text"
+              class="text-lg p-2 w-[55%] rounded-xl border"
+              style="border: 1.5px solid black"
+              placeholder="Password"
+            />
+            <input
+              type="text"
+              class="text-lg p-2 w-[55%] rounded-xl border"
+              style="border: 1.5px solid black"
+              placeholder="Confirm Password"
+            />
+            <div class="w-[100%] flex justify-center">
               <button
-                class="bg-[#69B99D] w-[50%] py-4 font-semibold rounded-xl"
+                class="bg-[#69B99D] w-[55%] py-3 font-semibold rounded-xl"
               >
-                Log in
+                Create Account
               </button>
             </div>
           </form>
         </div>
       </div>
-      <div class="hidden md:inline w-[40%] h-[100vh]">
-        <img
-          class="w-[100%] h-[100vh] object-cover bg-no-repeat"
-          src="./img/linkedin-sales-solutions-B_DJO2-K22M-unsplash 1.png"
-          alt=""
-        />
-      </div>
     </header>
-    <script>
-      const toggle = document.getElementById("toggle");
-      const dot = document.querySelector(".dot");
-
-      toggle.addEventListener("change", function () {
-        if (toggle.checked) {
-          dot.classList.add("translate-x-6");
-          dot.classList.remove("translate-x-0");
-        } else {
-          dot.classList.remove("translate-x-6");
-          dot.classList.add("translate-x-0");
-        }
-      });
-    </script>
   </body>
 </html>
