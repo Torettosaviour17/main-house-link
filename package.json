@@ -1,7 +1,8 @@
 {
+  "name": "main-house-link",
+  "version": "1.0.0",
   "scripts": {
-    "start": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "build": "npx tailwindcss -i ./input.css -o ./output.css"
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10"
