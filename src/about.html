@@ -14,74 +14,57 @@
 </head>
 <body class="font-Poppins">
     <header class="bg-[#D9D9D9]">
-        <nav class="flex justify-around items-center pt-5">
-            <div>
-              <a class="flex items-center" href="./index.html">
-              <img class="sm:scale-75 " src="./img/logo.png" alt="" />
-              <p class="text-[#4BA586] sm:text-xl text-2xl>HouseLinkUp</p>
-              </a>
-            </div>
-            <div>
-              <ul class="hidden md:flex justify-around items-center space-x-8">
-                <li
-                  class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3"
-                >
-                  <a href="./index.html">Home</a>
-                </li>
-                <li
-                  class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3"
-                >
-                  <a href="./property.html">Property</a>
-                </li>
-                <li
-                  class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3"
-                >
-                  <a href="./about.html">About</a>
-                </li>
-                <li
-                  class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3"
-                >
-                  <a href="">Service</a>
-                </li>
-                <li
-                  class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3"
-                >
-                  <a href="">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="flex items-center justify-between sm:space-x-2 md:space-x-3">
-              <a href="./sign-up.html">
-                <button
-                class="text-[#4BA586] text-nowrap truncate hidden lg:inline-block bg-white hover:bg-[#4BA586] hover:text-white sm:px-4 sm:py-2 md:px-10 md:py-2 lg:px-16 lg:py-4"
-              >
-                Sign in
-              </button>
-              </a>
-              <a href="./sign-in.html">
-                <button
-                class="bg-[#4BA586] hidden lg:inline-block text-white hover:bg-white hover:text-[#4BA586] md:px-10 md:py-2 lg:px-16 sm:px-4 sm:py-2 lg:py-4"
-              >
-                Login
-              </button>
-              </a>
-            </div>
-            <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none">
-              <span class="hamurger-top"></span>
-              <span class="hamurger-middle"></span>
-              <span class="hamurger-bottom"></span>
-          </button>
-      </div>
-      <div class="md:hidden">
-          <div id="menu" class="absolute flex-col items-center  self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto hidden sm:self-center left-6 right-6 drop-shadow-md">
-              <a href="./index.html" class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3">Home</a>
-              <a href="./property.html" class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3">property</a>
-              <a href="./service.html" class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3">About</a>
-              <a href="#" class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3 ">Service</a>
-              <a href="" class="hover:text-[#4BA586] text-[#8E8E8E] hover:scale-y-125 hover:pb-3">Contact</a>
-          </div>
-      </div> 
-     </nav>
+        <nav class="flex justify-between items-center px-6 py-4 bg-white shadow-md relative">
+  <!-- Logo Section -->
+  <a class="flex items-center gap-2" href="./index.html">
+    <img class="h-8 sm:scale-75" src="./img/logo.png" alt="Logo" />
+    <p class="text-[#4BA586] sm:text-xl text-2xl font-bold">HouseLinkUp</p>
+  </a>
+
+  <!-- Desktop Nav Links -->
+  <ul class="hidden md:flex space-x-8 items-center text-[#8E8E8E] font-medium">
+    <li><a class="hover:text-[#4BA586]" href="./index.html">Home</a></li>
+    <li><a class="hover:text-[#4BA586]" href="./property.html">Property</a></li>
+    <li><a class="hover:text-[#4BA586]" href="./about.html">About</a></li>
+    <li><a class="hover:text-[#4BA586]" href="./service.html">Service</a></li>
+    <li><a class="hover:text-[#4BA586]" href="./contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Desktop Buttons -->
+  <div class="hidden lg:flex space-x-3">
+    <a href="./sign-up.html">
+      <button class="text-[#4BA586] bg-white hover:bg-[#4BA586] hover:text-white px-6 py-2 border border-[#4BA586] rounded">
+        Sign in
+      </button>
+    </a>
+    <a href="./sign-in.html">
+      <button class="bg-[#4BA586] text-white hover:bg-white hover:text-[#4BA586] px-6 py-2 border border-[#4BA586] rounded">
+        Login
+      </button>
+    </a>
+  </div>
+
+  <!-- Hamburger Button -->
+  <button id="menu-btn" class="block md:hidden focus:outline-none z-50">
+    <svg class="w-6 h-6 text-[#4BA586]" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="menu"
+    class="hidden absolute top-full left-0 right-0 bg-white shadow-md py-6 flex-col items-center space-y-4 text-[#8E8E8E] font-semibold z-40 md:hidden">
+    <a href="./index.html" class="hover:text-[#4BA586]">Home</a>
+    <a href="./property.html" class="hover:text-[#4BA586]">Property</a>
+    <a href="./about.html" class="hover:text-[#4BA586]">About</a>
+    <a href="./service.html" class="hover:text-[#4BA586]">Service</a>
+    <a href="./contact.html" class="hover:text-[#4BA586]">Contact</a>
+    <a href="./sign-up.html" class="hover:text-[#4BA586]">Sign in</a>
+    <a href="./sign-in.html" class="hover:text-[#4BA586]">Login</a>
+  </div>
+</nav>
      <section class="md:flex inline-block w-full items-center justify-around p-10 md:space-x-10">
         <div class="md:w-1/2 pl-12"  >
           <span class="text-[#69B99D] items-center md:items-start">

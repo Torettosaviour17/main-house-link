@@ -1,8 +1,16 @@
-const btn = document.getElementById("menu-btn");
-const nav = document.getElementById("menu");
+// const btn = document.getElementById("menu-btn");
+// const nav = document.getElementById("menu");
 
-btn.addEventListener("click", () => {
-  btn.classList.toggle("open");
-  nav.classList.toggle("flex");
-  nav.classList.toggle("hidden");
+// btn.addEventListener("click", () => {
+//   btn.classList.toggle("open");
+//   nav.classList.toggle("flex");
+//   nav.classList.toggle("hidden");
+// });
+
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
 });
