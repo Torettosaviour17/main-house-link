@@ -11,5 +11,6 @@
       "dest": "/src/$1"
     }
   ],
-  "outputDirectory": "src"
+  "outputDirectory": "src",
+  "rewrites": [{ "source": "/(.*)", "destination": "/src/$1" }]
 }
